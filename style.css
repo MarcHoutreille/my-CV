@@ -1,0 +1,318 @@
+@font-face {
+    font-family: bitpap;
+    src: url(BitPap.ttf);
+  }
+
+@font-face {
+    font-family: bitwise;
+    src: url(bitwise.ttf);
+}
+
+@font-face {
+    font-family: oldschool;
+    src: url(computer_pixel-7.ttf);
+}
+
+@font-face {
+    font-family: VT323;
+    src: url(VT323-Regular.ttf);
+}
+
+.navbar {
+    font-family: 'Rubik', sans-serif;
+    color:rgb(172, 172, 172);
+    margin:0px;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background-color: rgb(37, 37, 37);
+    padding:22px;
+    border-bottom: 3px solid orange;
+    font-size: 18px;
+
+}
+.navbar a:hover{
+  transition:0.1s;
+  text-shadow: 1px 1px 2px black, 0 0 12px rgb(229, 255, 0), 0 0 8px rgb(255, 188, 5);
+}
+h4 {
+  text-shadow: 2px 2px #8f8f8f;
+}
+
+#grid-main h2 {
+  margin-top: 75px;
+  background-color: rgb(252, 201, 106);
+  text-align:center;
+}
+
+#w3-orange {
+  box-shadow: 5px 10px #ff0000;
+}
+/* Contient la grille entière */
+#grid-container {
+        display: grid;
+        grid-template-columns: 16.4% 65.2%;
+        grid-template-rows: 2.1% 10.8% 23.7% 69.5% 10%;
+        gap: 0px 10px;
+        grid-template-areas:
+          ". ."
+          "grid-header-wrapper grid-banner"
+          "grid-header-wrapper grid-main"
+          "grid-experience grid-main"
+          ". .";
+        padding-left:8px;
+      }
+      
+  /* Contient la photo, le nom et le job */
+#grid-header-wrapper {
+    border-top-left-radius: 8px;
+    grid-area: grid-header-wrapper;
+    font-family: VT323;
+    color: orange;
+    background-color: rgb(80, 80, 80);
+    padding-left: 15px;
+    padding-bottom: 250px;
+    padding-right: 10px; 
+    object-fit:fill;
+    display: inline-block;
+    overflow:hidden;
+*
+    
+
+}
+#grid-experience h4{
+  font-family: VT323;
+  font-weight: bold;
+  text-shadow: none;
+  font-size: 25px;
+}
+
+#grid-experience p{
+  margin-left: 40px;
+  margin-bottom:10px;
+}
+
+#myName {
+    padding-left: 15px;
+    font-size: 23px;
+}
+
+#myJob {
+    padding-left: 15px;
+}
+
+#myPic {
+    filter:grayscale(100%);
+    object-fit: fill;
+
+    
+}
+#myPic img{
+  width:80%;
+}
+
+
+/* bannière avec différentes icones de contact */
+#grid-banner {
+    border-top-right-radius: 8px;
+    display: flex;
+    grid-area: grid-banner;
+    background-color: rgb(243, 175, 28);
+    font-family: 'VT323', monospace;
+    padding-right: 80px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    align-items: space-between;
+    display:block;
+    text-align: right;
+
+}
+
+#icons-wrapper a{
+  color:rgb(32, 32, 32);
+  opacity: 0.6;
+  transition: 0.22s;
+} 
+#icons-wrapper a:hover{
+  opacity: 1;
+} 
+    
+/* bannière de gauche */
+#grid-experience {
+    font-size: 18px;
+    font-family: 'VT323', monospace;
+    padding-left: 15px;
+    grid-area: grid-experience;
+    background-color: rgb(172, 172, 172);
+
+}
+/* bannière avec la majorité du texte */
+#grid-main {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    padding:20px;
+    grid-area: grid-main;
+    background-color: rgb(172, 172, 172);
+}
+
+
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    align-items: center;
+}
+
+a:link {
+    color:rgb(224, 153, 0);
+    text-decoration: none;
+}
+
+/*
+a:hover {
+    color:whitesmoke;
+    text-decoration: none;
+    
+}
+
+*/
+a:active {
+    color:rgb(224, 153, 0);
+    text-decoration: none;
+    
+}
+a:visited {
+    color:rgb(224, 153, 0);
+    text-decoration: none;
+    
+}
+
+
+.errorBox {
+    margin:auto;
+    width: 50%;
+    border: 10px solid rgb(219, 183, 19);
+    padding: 30px;
+    border-radius: 6px;
+    background-color: #cebc8b;
+}
+
+.header1 {
+    text-align: center;
+    font-size: 50px;   
+}
+
+.article1 { 
+  width: 50%;
+  margin:auto;
+  border-radius: 4px;
+  justify-content: center;
+  padding: 125px;
+  background-color: rgb(172, 172, 172);;
+}
+
+.article-header {
+  text-align: left;
+}
+
+.butwhy {
+text-align: center;
+    
+}
+
+html {
+  background-color: #828282;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23828282' width='11' height='11'/%3E%3Crect fill='%23818181' x='10' width='11' height='11'/%3E%3Crect fill='%237f7f7f' y='10' width='11' height='11'/%3E%3Crect fill='%237e7e7e' x='20' width='11' height='11'/%3E%3Crect fill='%237d7d7d' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%237b7b7b' y='20' width='11' height='11'/%3E%3Crect fill='%237a7a7a' x='30' width='11' height='11'/%3E%3Crect fill='%23797979' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23777777' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23767676' y='30' width='11' height='11'/%3E%3Crect fill='%23757575' x='40' width='11' height='11'/%3E%3Crect fill='%23737373' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23727272' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23717171' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23707070' y='40' width='11' height='11'/%3E%3Crect fill='%236e6e6e' x='50' width='11' height='11'/%3E%3Crect fill='%236d6d6d' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%236c6c6c' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%236a6a6a' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23696969' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23686868' y='50' width='11' height='11'/%3E%3Crect fill='%23666666' x='60' width='11' height='11'/%3E%3Crect fill='%23656565' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23646464' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23636363' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23616161' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23606060' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%235f5f5f' x='70' width='11' height='11'/%3E%3Crect fill='%235e5e5e' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%235c5c5c' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%235b5b5b' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%235a5a5a' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23595959' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23575757' x='80' width='11' height='11'/%3E%3Crect fill='%23565656' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23555555' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23545454' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23525252' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23515151' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23505050' x='90' width='11' height='11'/%3E%3Crect fill='%234f4f4f' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%234d4d4d' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%234c4c4c' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%234b4b4b' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%234a4a4a' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23494949' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23474747' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23464646' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23454545' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23444444' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23434343' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23414141' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23404040' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%233f3f3f' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%233e3e3e' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%233d3d3d' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%233b3b3b' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%233a3a3a' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23393939' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23383838' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.button {
+    transition-duration: 0.4s;
+    margin:50px;
+    font-size:9px;
+    background-color: #929292; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:8px;
+  }
+
+.button:hover {
+    background-color: #d4c8a6;
+    color:white;
+  }
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+  html,body {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    
+  }
+.blinking-cursor {
+    font-weight: 80 ;
+    font-size: 22px;
+    color: orange;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: orange;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: orange;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
